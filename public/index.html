@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>점·선·면 연구소 (Point-Line-Plane Institute)</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="kor-font">
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <span style="color: var(--accent-color);">▪</span> 점·선·면 연구소
+                </a>
+                <div class="nav-links">
+                    <a href="#about">연구소 소개</a>
+                    <a href="#research">핵심 가치</a>
+                    <a href="#services">서비스</a>
+                    <a href="#contact">문의</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <canvas id="bgCanvas"></canvas>
+        <div class="container hero-content">
+            <h1 class="hero-title">공간은 삶을,<br>기술은 인간을</h1>
+            <p class="hero-subtitle">Spaces Shape Lives, Technology Serves Humanity</p>
+            <div style="display:flex; gap:1rem;">
+                <a href="#services" style="padding: 1rem 2rem; background: var(--accent-color); color: #fff; border-radius: 8px; font-weight: 600;">연구 분야 보기</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="container">
+        <h2 style="text-align: center; margin-bottom: 3rem;">점-선-면-차원 프레임워크</h2>
+        <div class="concepts-grid">
+            <div class="concept-card">
+                <div class="concept-icon">🔴</div>
+                <h3>점 (Point)</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 1rem;">순간과 존재</h4>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                    일상의 작은 순간들에서 의미를 발견합니다. 현상학적 접근을 통해 공간 속 신체의 경험과 미시적 감정을 탐구합니다.
+                </p>
+            </div>
+            <div class="concept-card">
+                <div class="concept-icon">➖</div>
+                <h3>선 (Line)</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 1rem;">흐름과 관계</h4>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                    움직임 속에서 드러나는 삶의 서사를 연구합니다. 동선이 만드는 삶의 이야기와 사회적 관계의 역학을 분석합니다.
+                </p>
+            </div>
+            <div class="concept-card">
+                <div class="concept-icon">▭</div>
+                <h3>면 (Plane)</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 1rem;">장소와 공동체</h4>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                    공간이 품은 문화와 사람들이 만드는 의미를 찾습니다. 물리적 공간과 디지털 플랫폼이 어떻게 공동체를 형성하는지 연구합니다.
+                </p>
+            </div>
+            <div class="concept-card">
+                <div class="concept-icon">📦</div>
+                <h3>차원 (Dimension)</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 1rem;">시간과 의미</h4>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                    과거-현재-미래를 가로지르는 삶의 층위를 다룹니다. 기술로 최적화된 삶과 윤리적 가치 사이의 균형을 모색합니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" style="background: var(--card-bg);">
+        <div class="container">
+            <h2 style="margin-bottom: 4rem;">인문학 기반 기술 서비스</h2>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <article class="service-card">
+                    <h3 class="service-title">CodeInDocker</h3>
+                    <p class="service-desc">
+                        개발 구성원 간 보다 쉽고 정확하게 소스를 공유하게 돕는 플랫폼.<br>
+                        협업의 의미를 기술로 구현하여, 팀의 상호작용과 지식 공유를 원활하게 합니다.
+                    </p>
+                    <a href="services/codeindocker.html" class="btn-arrow">
+                        자세히 보기 <span>→</span>
+                    </a>
+                </article>
+
+                <!-- Service 2 -->
+                <article class="service-card">
+                    <h3 class="service-title">LecturePlans</h3>
+                    <p class="service-desc">
+                        AI와 협업을 통해 신속하고 풍부한 강의 자료를 준비하게 돕는 플랫폼.<br>
+                        교육의 본질인 '의미 있는 소통'을 기술로 강화합니다.
+                    </p>
+                    <a href="services/lectureplans.html" class="btn-arrow">
+                        자세히 보기 <span>→</span>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <div style="background: linear-gradient(135deg, #161b22 0%, #0d1117 100%); border: 1px solid var(--glass-border); border-radius: 20px; padding: 4rem; text-align: center;">
+            <h2 style="margin-bottom: 1.5rem;">함께 연구하기</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                공간, 기술, 인간에 대한 근본적인 질문에 관심 있으신가요?<br>
+                협력 연구, 강연, 컨설팅에 관해 언제든지 연락주세요.
+            </p>
+            <a href="mailto:mahau.master@gmail.com" style="display: inline-block; padding: 1rem 2rem; background: var(--text-primary); color: var(--bg-color); border-radius: 8px; font-weight: 700;">
+                mahau.master@gmail.com
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>점·선·면 연구소</h4>
+                    <p>Spaces Shape Lives, Technology Serves Humanity</p>
+                </div>
+                <div class="footer-info">
+                    <p>Contact: mahau.master@gmail.com</p>
+                    <p>© 2025 Point-Line-Plane Institute. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
